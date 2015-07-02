@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+    <package name="profile" namespace="/" extends="json-default">
+        <action name="updatePassword" class="ajaxProfileAction" method="updatePassword">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="updateProfile" class="ajaxProfileAction" method="updateProfile">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="validatePassword" class="ajaxProfileAction" method="validatePassword">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="validateUsernameAvailable" class="ajaxUserAction" method="validateUsernameUsed">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="validateCaptcha" class="ajaxUserAction" method="validateCaptcha">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="validateUsername" class="ajaxUserAction" method="validateUsername">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+    </package>
+
+
+    <package name="ajaxUser" namespace="/" extends="json-default">
+        <action name="applyBidAutomobile" class="ajaxUserAction" method="applyBidAutomobile">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+
+        <action name="bidAutomobile" class="ajaxUserAction" method="bidAutomobile">
+            <result type="json" name="success">
+                <param name="root">automobileBidVO</param>
+            </result>
+        </action>
+
+        <action name="syncAutomobileOffer" class="ajaxUserAction" method="syncAutomobileOffer">
+            <result type="json" name="success">
+                <param name="root">automobileBidVO</param>
+            </result>
+        </action>
+
+        <action name="validateUserHasEnoughMoney" class="ajaxUserAction" method="validateUserHasEnoughMoney">
+            <result type="json" name="success">
+                <param name="root">result</param>
+            </result>
+        </action>
+    </package>
+
+    <package name="user" namespace="/" extends="struts-default">
+
+        <action name="captcha" class="captchaAction" method="generateCaptcha"/>
+
+        <action name="register" class="userAction" method="register">
+            <result name="success">userIndex.jsp</result>
+        </action>
+
+        <action name="login" class="userAction" method="login">
+            <result name="success">userIndex.jsp</result>
+            <result name="error">login.jsp</result>
+        </action>
+
+        <action name="tryLogin" class="userAction" method="tryLogin">
+            <result name="success">userIndex.jsp</result>
+            <result name="error">login.jsp</result>
+        </action>
+
+        <action name="logout" class="userAction" method="logout">
+            <result name="success">index.jsp</result>
+        </action>
+
+        <action name="index" class="userAction" method="index">
+            <result name="success">framework.jsp</result>
+        </action>
+
+        <action name="tryUpdatePassword" class="profileAction" method="tryUpdatePassword">
+            <result name="success">password.jsp</result>
+        </action>
+
+        <action name="profile" class="profileAction" method="profile">
+            <result name="success">profile.jsp</result>
+        </action>
+
+        <action name="first" class="userAction" method="first">
+            <result name="success">index.jsp</result>
+        </action>
+
+        <action name="sales" class="userAction" method="sales">
+            <result name="success">sales.jsp</result>
+        </action>
+
+        <action name="detail" class="userAction" method="detail">
+            <result name="success">detail.jsp</result>
+        </action>
+
+        <action name="showSuccessfulBids" class="userAction" method="showSuccessfulBids">
+            <result name="success">bids.jsp</result>
+        </action>
+    </package>
+
+
+</struts>

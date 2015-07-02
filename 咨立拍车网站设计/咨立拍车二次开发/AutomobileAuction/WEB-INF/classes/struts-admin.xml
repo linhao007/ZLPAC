@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <package name="admin" namespace="/admin" extends="struts-default">
+
+        <action name="tryLogin" class="adminAction" method="tryLogin">
+            <result name="success">login.jsp</result>
+        </action>
+        <action name="adminLogin" class="adminAction" method="login">
+            <result name="success">index.jsp</result>
+            <result name="error">login.jsp</result>
+        </action>
+
+        <action name="userList" class="adminAction" method="listUsers">
+            <result name="success">users.jsp</result>
+        </action>
+
+        <action name="usersFind" class="adminAction" method="listUsers">
+            <result name="success">userTable.jsp</result>
+        </action>
+
+        <action name="userLock" class="adminAction" method="lockUser">
+            <result name="success">users.jsp</result>
+        </action>
+
+        <action name="userUnlock" class="adminAction" method="unLockUser">
+            <result name="success">users.jsp</result>
+        </action>
+
+        <action name="userDelete" class="adminAction" method="softDeleteUser">
+            <result name="success">userTable.jsp</result>
+        </action>
+
+        <action name="tryUserRecharge" class="adminAction" method="tryRechargeUser">
+            <result name="success">userRecharge.jsp</result>
+        </action>
+        <action name="userRecharge" class="adminAction" method="rechargeUser">
+            <result name="success">userList.action</result>
+        </action>
+
+        <action name="tryUserAdd" class="adminAction" method="tryAddUser">
+            <result name="success">addUser.jsp</result>
+        </action>
+        <action name="userAdd" class="adminAction" method="addUser">
+            <result name="success">users.jsp</result>
+        </action>
+
+        <action name="automobileAdd" class="adminAction" method="addAutomobile">
+            <result name="success">automobiles.jsp</result>
+        </action>
+        <action name="automobileDelete" class="adminAction" method="deleteAutomobile">
+            <result name="success">automobileTable.jsp</result>
+        </action>
+        <action name="automobiles" class="adminAction" method="listAutomobiles">
+            <result name="success">automobiles.jsp</result>
+        </action>
+        <action name="tryUpdateAutomobile" class="adminAction" method="tryUpdateAutomobile">
+            <result name="success">addAutomobile.jsp</result>
+        </action>
+        <action name="tryAutomobileAdd" class="adminAction" method="tryAddAutomobile">
+            <result name="success">addAutomobile.jsp</result>
+        </action>
+        <action name="automobileList" class="adminAction" method="listAutomobiles">
+            <result name="success">automobileTable.jsp</result>
+        </action>
+
+        <action name="showAllSuccessfulBids" class="adminAction" method="showAllSuccessfulBids">
+            <result name="success">bids.jsp</result>
+        </action>
+
+    </package>
+
+</struts>

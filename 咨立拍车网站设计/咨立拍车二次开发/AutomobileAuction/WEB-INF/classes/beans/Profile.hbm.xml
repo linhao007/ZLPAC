@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.zipaiche.model.db.Profile" table="Profile">
+        <id name="id" type="java.lang.Long">
+            <column name="id" precision="4" scale="0" />
+            <!-- 主键外键生成 -->
+            <generator class="foreign">
+                <param name="property">account</param>
+            </generator>
+        </id>
+
+        <property name="realname" type="java.lang.String"/>
+        <property name="sex">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">
+                    com.zipaiche.model.db.beanenum.Sex
+                </param>
+            </type>
+        </property>
+        <property name="email" type="java.lang.String"/>
+        <property name="idCardNumber" type="java.lang.String"/>
+        <property name="address" type="java.lang.String"/>
+        <property name="otherContact" type="java.lang.String"/>
+        <property name="hobby" type="text"/>
+
+        <one-to-one name="account" class="com.zipaiche.model.db.Account"/>
+    </class>
+    </hibernate-mapping>

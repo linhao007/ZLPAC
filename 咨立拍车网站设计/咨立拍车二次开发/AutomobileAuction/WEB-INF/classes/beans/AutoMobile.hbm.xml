@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.zipaiche.model.db.Automobile" table="AutoMobile">
+        <id name="id" type="java.lang.Long">
+            <column name="id" precision="4" scale="0" />
+            <generator class="increment"/>
+        </id>
+
+        <property name="carBrand" type="java.lang.String"/>
+        <property name="startPrice" type="java.lang.Double"/>
+        <property name="startDate" type="java.util.Date"/>
+        <property name="endDate" type="java.util.Date"/>
+        <property name="carMall">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">
+                    com.zipaiche.model.db.beanenum.CarMall
+                </param>
+            </type>
+        </property>
+        <property name="imagePathes" type="text"/>
+        <property name="parkPos" type="java.lang.String"/>
+        <property name="rejectPrice" type="java.lang.Double"/>
+        <property name="promisePrice" type="java.lang.Double"/>
+        <property name="transferPrice" type="java.lang.Double"/>
+        <property name="auctionFashion">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">
+                    com.zipaiche.model.db.beanenum.AuctionFashion
+                </param>
+            </type>
+        </property>
+
+        <many-to-one name="winnerBid" class="com.zipaiche.model.db.AutomobileBidRecord" column="winnerBidId" unique="true" />
+
+        <property name="contentHTML" type="text"/>
+
+
+
+        <property name="carNo" type="java.lang.String"/>
+        <property name="roundPrice" type="java.lang.Double"/>
+        <property name="carType" type="java.lang.String"/>
+        <property name="saleType" type="java.lang.String"/>
+        <property name="firstRegisterDate" type="java.util.Date"/>
+        <property name="passportDate" type="java.util.Date"/>
+
+        <property name="carBelog" type="java.lang.String"/>
+
+        <property name="personStatus" type="java.lang.String"/>
+        <property name="autoMobileDesc" type="text"/>
+        <property name="status">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">
+                    com.zipaiche.model.db.beanenum.AutomobileStatus
+                </param>
+            </type>
+        </property>
+
+        <property name="passport">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">
+                    com.zipaiche.model.db.beanenum.YesNoOption
+                </param>
+            </type>
+        </property>
+        <property name="mortgage">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">
+                    com.zipaiche.model.db.beanenum.YesNoOption
+                </param>
+            </type>
+        </property>
+        <property name="carDestroy">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">
+                    com.zipaiche.model.db.beanenum.YesNoOption
+                </param>
+            </type>
+        </property>
+        <property name="checked">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">
+                    com.zipaiche.model.db.beanenum.YesNoOption
+                </param>
+            </type>
+        </property>
+        <property name="breakRule">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">
+                    com.zipaiche.model.db.beanenum.YesNoOption
+                </param>
+            </type>
+        </property>
+        <property name="secondStarted">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">
+                    com.zipaiche.model.db.beanenum.YesNoOption
+                </param>
+            </type>
+        </property>
+
+        <!--<property name="carPark" type="java.lang.String"/>-->
+        <!--<property name="floodType" type="java.lang.String"/>-->
+        <!--<property name="floodLevel" type="java.lang.String"/>-->
+    </class>
+</hibernate-mapping>

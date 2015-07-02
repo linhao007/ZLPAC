@@ -1,0 +1,181 @@
+.nav-right{margin:0 2px;}
+i.nav-home{margin: 0 2px}
+li.nav-first{border-right: 1px #999 solid}
+.brower ul,.brower li,.brower p{float:right;}
+.brower ul{margin:20px 0px 0px;}
+.brower li{padding-left:10px;}
+.brower p{color:#0088cc;}
+
+.content.container{padding: 41px 0 0;}
+img.height-90,div.height-90{height:90px;}
+
+.verticalCenter{margin: 0 auto}
+.nav.right-float{float:right;margin:0;}
+
+.float-left{float:left;}
+.clear-left{clear:left;}
+.fill-parent{height: 100%}
+
+.rules{height:30px;background-color: #F7F7F7; margin: 0; border-left: 2px solid #3EA8E9}
+.rules div.navigate{float:left;}
+.rules .navigate a{line-height: 30px; margin-left: 10px; color:#0088cc;}
+.rules ul,.rules li{float:right;}
+.rules ul li a {padding: 5px 15px 5px; border-left: 1px solid #999}
+.offset-left-10{margin-left: 10px;}
+
+.slide .carousel-inner .item img {margin:0 auto;}
+.slide ol li {background-color:gray;}
+.slide ol li.active{background-color: black;}
+
+table.table tbody tr:hover{cursor: pointer;}
+/*TODO: 表头背景色无法覆盖全部*/
+table.table thead tr th{}
+
+.nav.nav-tabs.nav-frame{margin-bottom: 5px}
+
+.wrapper{height: 100%}
+
+.footer-page{background-color: #F7F7F7; position:relative; bottom: -208;}
+.footer-page ul,.footer-page li {float: left;}
+.footer-page ul{margin:0 auto;}
+.footer-page li {line-height: 40px;padding: 0 10px;}
+.footer-page div.container{text-align: center;}
+.footer-page div.container .middle{display: inline-block;}
+.footer-page li a {color:#333;}
+
+.container iframe{border: 0;}
+
+.box-inner {
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+}
+
+.box-header {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: -moz-use-text-color -moz-use-text-color #dedede;
+    border-image: none;
+    border-radius: 3px 3px 0 0;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 35px;
+    margin-bottom: 0;
+    min-height: 35px !important;
+    padding: 0px;
+}
+.box-inner {background:none repeat scroll 0 0 #f8f8ff;}
+
+.box-header span{
+	line-height: 35px;
+	margin-left: 20px;
+}
+
+.navigate .box-content{text-align: left}
+
+.box-content form{
+	display: inline-block;
+	margin:20px 0px 0px;
+	text-align: left;
+	font-size: 14px;
+}
+
+.box-content form .control-group label{
+	width:60px;
+	display:inline-block;
+	float:none;
+}
+.box-content form .control-group .agreement label{
+    width:290px;
+}
+.box-content form .control-group .controls{
+	margin-left: 20px;
+	display:inline-block;
+}
+.controls.centerAlign label:first-child{ margin-left:60px;}
+.controls.buttons button { margin-left:59px; min-width:100px;}
+
+.miao-showTime {
+    overflow: hidden;
+    width: 199px;
+}
+
+
+.miao-timeBack {
+    background: url("../img/time.gif") no-repeat scroll left;
+    height: 60px;
+    overflow: hidden;
+    text-align: left;
+    width: 198px;
+}
+
+.tab-content{border:1px solid #ececec;}
+
+.pmlisttd tr td {
+    border-bottom: 1px dotted #ececec;
+    color: #717171;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.pmlisttd tr td a img {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #f0f0f0;
+    padding: 3px;
+    width:120px;
+    height:90px;
+}
+
+.pmlisttd td.imglink{
+    width:120px;
+    height:90px;
+}
+
+.endTime {display:none;}
+
+.row-fluid b.count-time-tip{line-height: 50px; float: left;}
+
+.control-group .controls label.error{width:auto; padding-left: 10px; color: #b94a48;}
+span.welcome{float:right; line-height: 40px;}
+
+.navbar .nav li a.user{color:#CC0000}
+
+.remainTime .day {
+    padding-left: 12px;
+}
+
+.remainTime  .hour {
+    padding-left: 13px;
+}
+
+.remainTime .min {
+    padding-left: 8px;
+}
+
+.remainTime .sec {
+    padding-left: 8px;
+}
+
+.remainTime .day, .remainTime .hour, .remainTime .min, .remainTime .sec {
+    color: #444;
+    display: block;
+    float: left;
+    font-family: Helvetica,arial,sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 46px;
+    text-align: center;
+    width: 37px;
+}
+
+#uploadPic {overflow: scroll; max-height:500px;}
+
+#auction .tab-pane.fade{min-height: 500px; overflow: scroll;}
+.hide{display: none;}

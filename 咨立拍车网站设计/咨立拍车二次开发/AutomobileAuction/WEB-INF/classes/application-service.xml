@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="accountService" class="com.zipaiche.service.impl.AccountService">
+        <property name="baseDao" ref="accountDao" />
+    </bean>
+
+    <bean id="profileService" class="com.zipaiche.service.impl.ProfileService">
+        <property name="baseDao" ref="profileDao"/>
+    </bean>
+
+    <bean id="automobileService" class="com.zipaiche.service.impl.AutomobileService">
+        <property name="baseDao" ref="automobileDao"/>
+    </bean>
+
+    <bean id="automobileBidRecordService" class="com.zipaiche.service.impl.AutomobileBidRecordService">
+        <property name="baseDao" ref="automobileBidRecordDao"/>
+        <property name="accountService" ref="accountService"/>
+    </bean>
+
+    <bean id="automobileVOService" class="com.zipaiche.service.impl.AutomobileVOService"/>
+
+    <bean id="timerTaskService" class="com.zipaiche.service.impl.TimerTaskService">
+        <property name="automobileVOService" ref="automobileVOService"/>
+        <property name="accountService" ref="accountService"/>
+        <property name="automobileService" ref="automobileService"/>
+        <property name="automobileBidRecordService" ref="automobileBidRecordService"/>
+    </bean>
+</beans>

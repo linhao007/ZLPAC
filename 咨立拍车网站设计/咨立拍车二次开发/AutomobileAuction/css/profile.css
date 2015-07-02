@@ -1,0 +1,10 @@
+#profile{margin:0;}
+#content{margin-top: 5px}
+#content .control-group{margin-bottom: 5px;}
+
+.box-content.profile{text-align: center}
+.profile.box-content form.form-horizontal {margin:5px 0px 0px}
+.profile.box-content form.form-horizontal .control-group{margin-bottom: 5px;}
+.profile.box-content form.form-horizontal .control-group label {min-width:100px;}
+
+.profile.box-content form.form-horizontal .control-group .controls.sex label{min-width: 40px;}

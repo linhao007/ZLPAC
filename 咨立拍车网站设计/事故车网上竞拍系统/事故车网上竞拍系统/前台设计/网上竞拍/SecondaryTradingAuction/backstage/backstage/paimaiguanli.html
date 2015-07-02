@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>蓝点暑假项目</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="../css/font-awesome.min.css" />
+<link rel="stylesheet" href="../css/ace.min.css" />
+<link rel="stylesheet" href="../css/ace-rtl.min.css" />
+<link rel="stylesheet" href="../css/ace-skins.min.css" />
+<script src="../js/ace-extra.min.js"></script>
+<script type="text/javascript">
+	function DoCheck() {
+		var ch = document.getElementsByName("choose");
+		if (document.getElementsByName("allChecked")[0].checked == true |
+		 document.getElementsByName("allChecked")[1].checked == true) {
+			for (var i = 0; i < ch.length; i++) {
+				ch[i].checked = true;
+			}
+		} else {
+			for (var i = 0; i < ch.length; i++) {
+				ch[i].checked = false;
+			}
+		}
+	}
+</script>
+<script src="../../js/ace-extra.min.js"></script>
+
+</head><body>
+	<center>
+	<h2>
+	<font color="#FF0000">
+	当前正在拍卖车辆管理	</font>	</h2>
+</center>
+
+<div class="main-container" id="main-container"  >
+ <div class="page-content"  >
+  <div class="page-header">
+  <table class="table table-hover" border="1">
+	<thead>
+      <tr>
+	  
+        <td width="9%">车辆名称</td>
+        <td width="12%"><div align="center">车牌号</div></td>
+        <td width="12%"><div align="center">当前竞价人数</div></td>
+        <td width="11%"><div align="center">当前最高价</div></td>
+        <td width="9%"><div align="center">竞拍底价</div></td>
+        <td colspan="2"><div align="center">操作</div></td>
+	  </tr>
+	  </thead>
+	  
+	  <tbody>
+      <tr>
+	
+        <td>
+          <div align="left">
+           
+        蒋介石</div></td>
+        <td><div align="center">赣M-XXXX</div></td>
+        <td><div align="center">1</div></td>
+        <td><div align="center">10,000</div></td>
+        <td><div align="center">5,000</div></td>
+       
+		<td width="15%">
+				<div align="center"><a href="#">暂停</a> </div></td>
+        <td width="9%"><div align="center"><a data-toggle="modal" href="#myModal">终止</a></div></td> 
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+  </div>
+  
+  <center>
+    <ul class="pagination">
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+  </center>
+</div>
+</body>
+</html>

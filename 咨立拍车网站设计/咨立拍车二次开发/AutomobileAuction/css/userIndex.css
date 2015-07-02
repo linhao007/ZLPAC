@@ -1,0 +1,28 @@
+.box-content>ul>li>a {
+	background: url("../img/dian2.gif") no-repeat scroll 2px center rgba(0, 0, 0, 0);
+	color:#333;
+	font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+}
+
+.box-content{
+	text-align: left;
+}
+
+.box-content li{
+	list-style: none;
+}
+
+.navigate .row-fluid{
+	margin-top:5px;
+}
+
+#directContent{
+    margin-top:41px;
+}
+
+#right{
+    min-height: 500px;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userAction" class="com.zipaiche.action.UserAction" scope="prototype">
+        <property name="accountService" ref="accountService"/>
+        <property name="automobileService" ref="automobileService"/>
+        <property name="automobileVOService" ref="automobileVOService"/>
+        <property name="automobileBidRecordService" ref="automobileBidRecordService"/>
+    </bean>
+
+    <bean id="ajaxUserAction" class="com.zipaiche.action.ajax.AjaxUserAction" scope="prototype">
+        <property name="accountService" ref="accountService" />
+        <property name="automobileService" ref="automobileService"/>
+        <property name="automobileVOService" ref="automobileVOService"/>
+    </bean>
+
+    <bean id="captchaAction" class="com.zipaiche.action.CaptchaAction" />
+
+    <bean id="profileAction" class="com.zipaiche.action.ProfileAction" scope="prototype">
+        <property name="profileService" ref="profileService"/>
+        <property name="accountService" ref="accountService"/>
+    </bean>
+
+    <bean id="ajaxProfileAction" class="com.zipaiche.action.ajax.AjaxProfileAction" scope="prototype">
+        <property name="profileService" ref="profileService"/>
+        <property name="accountService" ref="accountService"/>
+    </bean>
+
+    <bean id="adminAction" class="com.zipaiche.action.admin.AdminAction">
+        <property name="profileService" ref="profileService"/>
+        <property name="accountService" ref="accountService"/>
+        <property name="automobileService" ref="automobileService"/>
+        <property name="taskService" ref="timerTaskService"/>
+    </bean>
+
+</beans>

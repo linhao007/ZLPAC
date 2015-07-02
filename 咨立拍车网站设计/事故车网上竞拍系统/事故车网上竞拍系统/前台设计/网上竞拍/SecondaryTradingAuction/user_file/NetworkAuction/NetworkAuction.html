@@ -1,0 +1,493 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+ <head id="Head1"> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>
+	在线事故车拍卖系统
+</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+    <script src="../../js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../js/slider.js"></script>
+
+<script type="text/javascript" src="../../js/index.js"></script>
+<link href="../../css/index.css" rel="stylesheet" type="text/css" />
+
+
+<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+<link href="../../css/index.css" rel="stylesheet" type="text/css" />
+  <link type="text/css" href="../../css/common.css" rel="stylesheet" />
+  <link type="text/css" href="../../css/foot.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/tab.js"></script>
+<SCRIPT type=text/javascript> 
+var _c = _h = 0;
+$(document).ready(function () {
+    $('#play  li').click(function(){
+        var i = $(this).attr('alt') - 1;
+        clearInterval(_h);
+        _c = i;
+        //play();
+        change(i);       
+    })
+    $("#pic img").hover(function(){clearInterval(_h)}, function(){play()});
+    play();
+})
+function play()
+{
+    _h = setInterval("auto()", 3000);
+ 
+}
+function change(i)
+{
+    $('#play li').css('background-color','#000000').eq(i).css('background-color','#FF3000').blur();
+    $("#pic img").fadeOut('slow').eq(i).fadeIn('slow');
+}
+function auto()
+{   
+    _c = _c > 6 ? 0 : _c + 1;
+ 
+    change(_c);
+}
+</SCRIPT>
+ </head> 
+ <!--
+ <script language='javascript' defer>if(confirm('您还没有登录，没有此权限；立即登录吗？')){top.location.href='../../../index.html'/*tpa=http://www.cygpm.com/loginhui.aspx*/}else{top.location.href='../../../index.htm'/*tpa=http://www.cygpm.com/Default.aspx*/}</script>-->
+
+ <body> 
+<div class="up">
+    <div class="header">
+        <div style="margin-top:15px;">
+            <font size="+1" color="#FFFFFF">
+                做全国最专业事故车竞拍网站
+            </font>
+            <div style="float:right">
+                <form method="post">
+                    <font color="#FFFFFF">
+                        用户名:
+                    </font>
+                    <input type="text" name="username" />
+                    <font color="#FFFFFF">
+                        密&nbsp;&nbsp;码:
+                    </font>
+                    <input type="password" name="password" />
+                    <input type="submit" value="登录" style="background:url(img/dengru.png); width:40px; height:25px;"
+                    />
+                </form>
+            </div>
+        </div>
+        <li class="doLogBox" style="margin-left:850px;">
+            <a href="#">
+                登录
+            </a>
+            &nbsp;|&nbsp;
+            <a href="#">
+                注册
+            </a>
+            &nbsp;|&nbsp;
+            <a href="#">
+                找回密码
+            </a>
+        </li>
+    </div>
+</div>
+<div class="logoposition">
+    <div style=" margin-left:80px;width:200px; float:left">
+        <img class="logo" src="../../img/zili.png" />
+    </div>
+    <div style="width:600px; margin-top:25px; float:left">
+        <div style="margin-top:25px;; margin-left:350px;" >
+            <font size="+2">
+                联系电话:0791-83963313
+            </font>
+        </div>
+    </div>
+    <div style="width:300px;float:left; margin-top:50px;">
+        <font size="+1">
+            <a href="#">
+                免责声明
+            </a>
+            |
+            <a href="#">
+                法律声明
+            </a>
+        </font>
+    </div>
+</div>
+<div class="menu_navcc">
+    <div class="menu_nav clearfix">
+        <ul class="nav_content">
+            <li >
+                <a href="../../index.html" title="首页">
+                    <span>
+                        首页
+                    </span>
+                </a>
+            </li>
+            <li class="current">
+                <a href="NetworkAuction.html" title="网络拍卖">
+                    <span>
+                        网络拍卖
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../UserInfo/User.html" title="会员中心">
+                    <span>
+                        会员中心
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="VIP大厅">
+                    <span>
+                        VIP大厅
+                    </span>
+                </a>
+            </li>
+           <li>
+                <a href="../AdvanceCar/AdvanceCar.html" title="预拍公告">
+                    <span>
+                        预拍公告
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../help/help.html" title="帮助中心">
+                    <span>
+                        帮助中心
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="../compyIntro/company.html" title="公司简介">
+                    <span>
+                        关于我们
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <div class="menu_nav_right">
+        </div>
+    </div>
+</div>
+
+ 
+<!-- 导航条 -->
+ <div id="main1_x">
+<div id="w970" > 
+   <div style="margin-bottom:5px; border-top:solid 1px #c2d5e3; border-bottom:solid 1px #c2d5e3; " >  
+ 
+   
+   <div style="width: 1000px; text-align: left; margin: 0 auto;">
+     <p style="font-size: 16px; font-weight: bold; color: #ff6600;"> 倒计时竞价操作说明：</p>
+     <p style="font-size: 16px; font-weight: bold; color: #ff6600;">&nbsp;</p>
+     <div style="border: 1px dashed #C0C0C0; background-color: #F6F6F6;">
+       <div> <img src="../../img/top.gif" tppabs="http://www.cygpm.com/images/top.gif" style="margin-top: -10px;" /></div>
+       <p style="font-size: 14px; color: #808080; line-height: 24px;"> 所有参与竞价的会员在竞价开始后，300秒倒计时开始，会员每次出价必须高于前次会员出价，出价后，300秒倒计时重新开始，300秒倒计时结束时，如果没有会员再次出价，则竞价结束，最后出价的会员为最终成交会员。</p>
+       <div style="border: 1px solid #C0C0C0; background-color: #FFFFFF; width: 800px; margin: 0 auto;
+                font-size: 12px;">
+         <div>
+           <table>
+             <tr>
+               <td style="border: 1px solid #C0C0C0"><img src="../../img/201311219500.jpg" tppabs="http://www.cygpm.com/flash/2014101795703.jpg" width="90px" height="80px" /> </td>
+               <td style="border: 1px solid #C0C0C0"><div style="height: 40px; border-bottom: 1px solid #C0C0C0; vertical-align: middle;
+                                    line-height: 40px; width: 696px;"> <b> 雪佛兰赛欧</b> <span> 豫J****</span> <b>初次登记时间</b> <span>:
+                 2013-9-30</span></div>
+                   <div style="height: 40px; vertical-align: middle; line-height: 40px;"> <span>倒计时竞价</span> <b>竞价开始：</b> <span> 2014-10-21 14:00:00</span> <b>竞价结束：</b> <span> 2014-10-21 14:05:00</span></div></td>
+             </tr>
+           </table>
+           <table style="vertical-align: middle;">
+             <tr>
+               <td width="90px" align="right" style="border: 1px solid #C0C0C0; background-color: #F5F5F5;
+                                height: 30px;"> 关注度 </td>
+               <td width="170px" style="border: 1px solid #C0C0C0;"> 2人 </td>
+               <td width="90px" align="right" style="border: 1px solid #C0C0C0; background-color: #F5F5F5;"> 竞价公告 </td>
+               <td width="170px" style="border: 1px solid #C0C0C0;"><a href="herald.html">查看</a> </td>
+               <td width="90px" align="right" style="border: 1px solid #C0C0C0; background-color: #F5F5F5;"> 活动折扣 </td>
+               <td width="170px" style="border: 1px solid #C0C0C0;"><span style="font-size: 14px; font-weight: bold; color: Red;"> 无</span> </td>
+             </tr>
+             <tr>
+               <td width="90px" align="right" style="border: 1px solid #C0C0C0; background-color: #F5F5F5;
+                                height: 30px;"> 保证金 </td>
+               <td width="170px" style="border: 1px solid #C0C0C0;"><span style="font-size: 14px; font-weight: bold; color: Red;"> 5000</span>元 </td>
+               <td width="90px" align="right" style="border: 1px solid #C0C0C0; background-color: #F5F5F5;"> 底价 </td>
+               <td width="170px" style="border: 1px solid #C0C0C0;"><span style="font-size: 14px; font-weight: bold; color: Red;"> 6000</span>元 </td>
+               <td width="90px" align="right" style="border: 1px solid #C0C0C0; background-color: #F5F5F5;"> 最低加价幅度 </td>
+               <td width="170px" style="border: 1px solid #C0C0C0;"><span style="font-size: 14px; font-weight: bold; color: Red;"> 500</span>元 </td>
+             </tr>
+           </table>
+         </div>
+         <div style="height: 484px;">
+           <div style="float: right; width: 360px;">
+             <div style="width: 358px; height: 320px; overflow: hidden">
+               <div id="allVisit"> </div>
+             </div>
+             <div style="text-align: right"> <a onClick="javascript:openWin('rizhi1.aspx-id=944.htm'/*tpa=http://www.cygpm.com/rizhi1.aspx?id=944*/);" target="_blank"
+                                style="cursor: pointer;">查看全部竞价日志</a></div>
+             <div>
+               <textarea name="ctl00$ContentPlaceHolder1$TextBox3" rows="2" cols="20" id="ctl00_ContentPlaceHolder1_TextBox3" disabled="disabled" style="height: 102px; width: 352px;"></textarea>
+             </div>
+           </div>
+           <div style="width: 430px; float: left; margin-right: 2px;">
+             <div style="height: 440px; border: 1px solid #C0C0C0;">
+               <div style="height: 39px; background-color: #F4EFAE; line-height: 39px; vertical-align: middle;
+                                text-align: center; font-size: 14px; font-weight: bold; color: #666666; border-bottom: 1px solid #C0C0C0;"> 倒计时(秒)</div>
+               <div id="show" style="height: 79px; line-height: 79px; font-size: 52px; vertical-align: middle;
+                                text-align: center; font-weight: bold; color: #666666; border-bottom: 1px solid #C0C0C0;">
+                 <script type="text/javascript">
+                                    (function () {
+                                        var show = document.getElementById('show');
+                                        setInterval(function () {
+                                            $.ajax({
+                                                url: "getjstime.ashx?id=944&nd=" + Math.random(),
+                                                data: "",
+                                                success: function (data) {
+                                                    if (data == "a")
+                                                    { show.innerHTML = '竞价结束'; }
+                                                    else if (data == "b")
+                                                    { show.innerHTML = "竞价未开始"; }
+                                                    else {
+                                                        show.innerHTML = data;
+                                                    }
+                                                }
+                                            });
+                                        }, 800);
+                                    })();
+                                </script>
+               </div>
+               <div style="height: 39px; background-color: #F4EFAE; line-height: 39px; vertical-align: middle;
+                                text-align: center; font-size: 14px; font-weight: bold; color: #666666; border-bottom: 1px solid #C0C0C0;"> 当前价(元)</div>
+               <div id="dqj" style="height: 99px; line-height: 99px; font-size: 72px; vertical-align: middle;
+                                text-align: center; font-weight: bold; color: #666666; border-bottom: 1px solid #C0C0C0;"> </div>
+               <div style="background-color: #F6F6F6;">
+                 <div style="text-align: center"> 我最近一次出价：<span id="mm">无</span></div>
+                 <div style="width: 280px; _margin-top: -80px; *margin-top: -80px; margin-top: 0px;
+                                    float: right;">
+                   <input name="ctl00$ContentPlaceHolder1$kbtn1" type="button" id="ctl00_ContentPlaceHolder1_kbtn1" onClick="getbt(1)" value="6000" />
+                   <input name="ctl00$ContentPlaceHolder1$kbtn2" type="button" id="ctl00_ContentPlaceHolder1_kbtn2" onClick="getbt(2)" value="6000" />
+                   <input name="ctl00$ContentPlaceHolder1$kbtn3" type="button" id="ctl00_ContentPlaceHolder1_kbtn3" onClick="getbt(3)" value="6000" />
+                 </div>
+                 <div style="height: 40px; line-height: 40px; margin-left: 8px; vertical-align: baseline;"> <span>我的出价</span></div>
+                 <div style="margin-left: 8px; height: 52px; width: 260px; vertical-align: middle;">
+                   <input name="ctl00$ContentPlaceHolder1$TextBox1" type="text" id="ctl00_ContentPlaceHolder1_TextBox1" style="border: 1px solid #C0C0C0; height: 49px; width: 260px;
+                                        color: #11F928; line-height: 49px; vertical-align: middle; font-size: 48px;" />
+                 </div>
+                 <div style="width: 150px; float: right;">
+                   <div style="width: 150px; float: left; margin-top: -50px; cursor: pointer;">
+                     <input name="ctl00$ContentPlaceHolder1$Button1" type="button" id="ctl00_ContentPlaceHolder1_Button1" onClick="getaddjian(1)" style="height: 26px;" value="＋ 500" />
+                     <br />
+                     <input name="ctl00$ContentPlaceHolder1$Button2" type="button" id="ctl00_ContentPlaceHolder1_Button2" onClick="getaddjian(2)" style="height: 26px;" value="－ 500" />
+                   </div>
+                 </div>
+                 <div style="margin-left: 8px; height: 50px; width: 417px;">
+                   <div style="margin-top: 24px;">
+                     <input name="button" type="button" id="ImageButton1" style="background: url(../../img/chujia.gif) no-repeat; border:none;
+                                            height: 29px; width: 219px; cursor:pointer;" onClick="getmasg()" value=""   />
+                     <input name="image" type="image" id="Image1" onClick="Javascript:window.history.go(0)" src="../../img/jdsj.gif" tppabs="http://www.cygpm.com/images/jdsj.gif" />
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <script type="text/javascript">
+                            function getmasg() {
+                                var im1 = document.getElementById("ctl00_ContentPlaceHolder1_TextBox1").value;
+                                    var nowprice ="0";
+                                    nowprice="6000";
+                                 $.ajax({
+                                 url:"nowprice.aspx?id=944&nd="+Math.random(),
+                                 data:"",
+                                 success: function (data){                              
+                                  nowprice=data;
+                                   im1 = parseInt(im1); nowprice = parseInt(nowprice);
+                                var resulet = im1 / nowprice;
+                                var re = resulet.toString().split('.');
+                                var tem = re[1].toString().length;
+                                var tem1;
+                                if (tem > 2)
+                                { tem1 = re[1].toString().substring(0, 3); }
+                                else
+                                { tem1 = re[1].toString().substring(0, tem); }
+                               
+                                 var msg = "您的当前出价为：" + im1 + " 是前者出价(" + nowprice + ")的" + re[0] + "." + tem1 + "倍";
+                                   if (resulet>1.5)
+                                {alert("出价不能超过当前价的1.5倍,谢谢合作!");}
+                                else{
+                                 if (confirm(msg)) {
+                                    mySubmit(4,im1);
+                                }}
+                                 } 
+                               });
+                               
+                            }
+                            
+                              function getaddjian(bt) {
+                                var im1 = document.getElementById("ctl00_ContentPlaceHolder1_kbtn" + bt).value;
+                                var im2 = document.getElementById("ctl00_ContentPlaceHolder1_TextBox1").value;
+                                $.ajax({
+                                 url:"nowprice1.aspx?id=944&nd="+Math.random()+"&nm="+im2+"&add="+bt,
+                                 data:"",
+                                 success: function (data){ 
+                                     if(data=="n")
+                                     { alert('出价不符合要求');}
+                                     else
+                                     { 
+                                         if (parseInt(data)>0)
+                                         {
+                                           $("#ctl00_ContentPlaceHolder1_TextBox1").val(data); 
+                                         }
+                                         else
+                                     { alert('出价不符合要求');}     
+                                     }                                                       
+                                }
+                               });
+                               
+                            }               
+                            
+                            function mySubmit(obj,objm) {
+                                var url = window.location.href;
+                                var array = url.split('?');                             
+                                url = "test.aspx?" + array[1] + "&action=dt&kd=js&nd=" + Math.random()+"&m="+objm+"&hui="+;
+                                $.ajax({
+                                    url: url,
+                                    data: "",
+                                    success: function (data) {                                   
+                                       var da=data.toString().split('?');
+                                       var dat1=da[0];
+                                      if(dat1=="b0"){                                        
+                                      //成功
+                                       var dat2=da[1];
+                                       var datj="500";                                          
+                                           $("#ctl00_ContentPlaceHolder1_kbtn1").val( parseInt(dat2)+parseInt(datj));                                              
+                                           $("#ctl00_ContentPlaceHolder1_kbtn2").val( parseInt(dat2)+parseInt(datj)*2);   
+                                           $("#ctl00_ContentPlaceHolder1_kbtn3").val( parseInt(dat2)+parseInt(datj)*3); 
+                                           $("#ctl00_ContentPlaceHolder1_TextBox1").val('');;                                          
+                                      }
+                                      else if(dat1=="b1"){
+                                      alert("竞价结束");
+                                      }
+                                        else if(dat1=="b2"){
+                                      alert("您还没有登录，登陆后方可出价！");
+                                      }
+                                        else if(dat1=="b3"){
+                                      alert("您已经出过价了。");
+                                      }
+                                        else if(dat1=="b4"){
+                                      alert("您现出的价不符合竞价要求，请重新出价");
+                                      } 
+                                       else if(dat1=="b5"){
+                                      alert("您现出的价格式不符合要求，只能出数字，请重新出价");
+                                      }
+                                    }
+                                });
+                            }                           
+                            function getbt(bt) {
+                                var im1 = document.getElementById("ctl00_ContentPlaceHolder1_kbtn" + bt).value;
+                                    var nowprice ="0";
+                                     nowprice="6000";
+                                 $.ajax({
+                                 url:"nowprice.aspx?id=944&nd="+Math.random(),
+                                 data:"",
+                                 success: function (data){                              
+                                  nowprice=data;
+                                      im1 = parseInt(im1); nowprice = parseInt(nowprice);
+                                var resulet = im1 / nowprice;
+                                var re = resulet.toString().split('.');
+                                var tem = re[1].toString().length;
+                                var tem1;
+                                if (tem > 2)
+                                { tem1 = re[1].toString().substring(0, 3); }
+                                else
+                                { tem1 = re[1].toString().substring(0, tem); }
+                                var msg = "您的当前出价为：" + im1 + " 是前者出价(" + nowprice + ")的" + re[0] + "." + tem1 + "倍";
+
+                                if (confirm(msg)) {
+                                    mySubmit(bt,im1);
+                                }
+                                 } 
+                               });
+                            
+                            }
+                              (function () {                           
+                          window.setInterval(function upye(){                              
+                               $.ajax({
+                                 url:"weblin.aspx?id=944&nd="+Math.random()+"&c=bu",
+                                 data:"",
+                                 success: function (data){
+                                 var da=data.toString().split('?');
+                                   $("#allVisit").html(da[2]);
+                                     $("#dqj").html(da[0]);
+                                       $("#ctl00_ContentPlaceHolder1_kbtn1").val(parseInt(da[0])+parseInt(da[1]));                                              
+                                         $("#ctl00_ContentPlaceHolder1_kbtn2").val( parseInt(da[0])+(parseInt(da[1])*2));   
+                                          $("#ctl00_ContentPlaceHolder1_kbtn3").val( parseInt(da[0])+(parseInt(da[1])*3)); 
+                                 } 
+                               });
+                            },2000);
+                          })();
+                           (function () {                           
+                          window.setInterval(function upye(){      
+                              $.ajax({
+                                 url:"getmymHandler.ashx?id=944&nd="+Math.random()+"&hui="+,
+                                 data:"",
+                                 success: function (data){
+                                  $("#mm").text(data); 
+                                 } 
+                               });
+                            },3000);
+                          })();
+                        </script>
+             <div style="border: 1px solid #C0C0C0; margin: 2px 0 2px 0;"> </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     </div>
+   </div>
+   </div>
+   </div>
+  
+   <!-- 尾部开始 -->
+<div id="footer" style="text-align: center; width: 1002px;">
+            <div class="footer-container">
+                <div class="copyright-info">
+                    <div class="footer-nav-links-list">
+                        <ul>
+                            <li><a href="">关于咨立拍车</a></li><li>| </li>
+                            <li><a href="">竞价流程</a></li><li>| </li>
+                            <li><a href="">公司账户</a></li><li>| </li>
+                            <li><a href="" target="_blank">网站导航</a></li>
+                        </ul>
+                    </div>
+                   版权所有<a href="http://ruanjianxy.jxau.edu.cn/" target="_blank">江西农业大学软件学院 <img  src="../../img/bluedot.jpg" width="31"></a><a href="http://baike.baidu.com/view/6177001.htm?fr=aladdin">蓝点工作室</a>
+                    <br>
+                    地址：南昌市昌北区沙井小区23号楼 电话：0791-83963313
+                </div>
+                <div class="footer-nav-links">
+                    <div class="footer-nav-links-title">
+                        友情链接 | Frends Link</div>
+                    <div class="footer-nav-links-list">
+                        <ul>
+                            
+                                    <li><a href="http://www.iauto8.com/" target="_blank">
+                                        汽车销量排行</a> </li>
+                                
+                                    <li><a href="http://www.che168.com/henan/" target="_blank">
+                                        二手车之家</a> </li>
+                                
+                                    <li><a href="http://www.carschina.com/" target="_blank">
+                                        汽车中国</a> </li>
+                                
+                                    <li><a href="http://www.autohome.com.cn/" target="_blank">
+                                        汽车之家</a> </li>
+                             
+                                
+                                    <li><a href="http://www.7c8.cc" target="_blank">
+                                        汽车吧</a> </li>
+                                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- 尾部结束  -->
+ </body>
+</html>

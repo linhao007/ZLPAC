@@ -1,0 +1,16 @@
+.sales {border-top:2px solid #3EA8E9;}
+.sales .row-fluid.record {padding:10px; border-bottom:1px dotted #ececec;}
+.sales .row-fluid.record .span4 img{height:205px; width:350px;}
+.span12.img-nav ul,.span12.img-nav li{float: left}
+.span12.img-nav ul li img{
+    height: 40px;
+    width: 60px;
+    padding: 2px;
+}
+.span12.img-nav ul li img:hover{
+    border: 2px solid #B92404;
+}
+.span12 table tr td {
+	font-size:12px;
+	padding-left: 5px;
+}
